@@ -4,7 +4,7 @@ import java.io.*;
 
 public class Main {
 
-
+    private static Game game;
 
    public static void main(String[] args) {
 
@@ -98,14 +98,20 @@ public class Main {
 
 
 
-       //comの手を生成
+        //comの手を生成
 
        com.createRandomHand();
 
-       //以降にテストコードを追加して検証を行う
+//        //以降にテストコードを追加して検証を行う
+
+//        System.out.println("ランダムなジャンケンの手をCPUにセットする");
+
+//        System.out.println(com.getHand().getHandName());
 
 
 
+       //勝敗決定
+
+       int result = game.judge(user, com);
    }
-
 }
